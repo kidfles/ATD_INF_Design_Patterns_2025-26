@@ -485,3 +485,6 @@ $RECYCLE.BIN/
 
 # Projectspecifiek: implementatieplan nooit committen
 FSM_implementation_plan.md
+
+# Projectspecifiek: jira-takenbestand nooit committen
+JIRA_TASKS.md
