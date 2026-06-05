@@ -1,11 +1,11 @@
 namespace Fsm.Model;
 
-public sealed class Fsm
+public sealed class StateMachine
 {
     private readonly Dictionary<string, List<Transition>> _outgoing = new();
     private readonly Dictionary<string, List<Transition>> _incoming = new();
 
-    public Fsm(
+    public StateMachine(
         IReadOnlyList<State> topLevelStates,
         IReadOnlyList<Transition> transitions,
         IReadOnlyList<Trigger> triggers)
