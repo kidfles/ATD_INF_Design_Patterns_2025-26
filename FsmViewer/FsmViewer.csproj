@@ -9,4 +9,8 @@
     <AssemblyName>FsmViewer</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="FsmViewer.Tests" />
+  </ItemGroup>
+
 </Project>
