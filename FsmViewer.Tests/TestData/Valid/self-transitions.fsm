@@ -1,0 +1,8 @@
+STATE init _ "start" INITIAL;
+STATE active _ "active" SIMPLE;
+STATE done _ "done" FINAL;
+TRIGGER tick "tick";
+TRANSITION t0 init active;
+TRANSITION t1 active active tick;
+TRANSITION t2 active active;
+TRANSITION t3 active done tick;

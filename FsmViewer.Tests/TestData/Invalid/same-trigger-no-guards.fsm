@@ -1,0 +1,8 @@
+STATE init _ "start" INITIAL;
+STATE open _ "open" SIMPLE;
+STATE closed _ "closed" SIMPLE;
+STATE locked _ "locked" SIMPLE;
+TRIGGER push "push";
+TRANSITION t0 init open;
+TRANSITION t1 open closed push;
+TRANSITION t2 open locked push;

@@ -1,0 +1,5 @@
+STATE init _ "start" INITIAL;
+STATE work _ "work" SIMPLE;
+TRIGGER reset "reset";
+TRANSITION t0 init work;
+TRANSITION t1 work init reset;

@@ -1,0 +1,4 @@
+STATE init _ "start" INITIAL;
+STATE active _ "active" SIMPLE;
+STATE orphan _ "orphan" SIMPLE;
+TRANSITION t0 init active;
